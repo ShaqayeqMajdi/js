@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#0a0022, #1b003d, #26004b, #2d0056);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 1200px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px rgba(85, 11, 138, 0.699),
+    0 0 150px rgba(111, 47, 154, 0.3);
+}
+
+#sun {
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 1.5s ease-in-out, filter 0.5s ease-in-out;
+  filter: drop-shadow(0 0 40px rgba(255, 180, 80, 0.9));
+}
+
+#moon {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 1.5s ease-in-out, opacity 0.8s ease-in-out,
+    filter 0.5s ease-in-out;
+  filter: drop-shadow(0 0 40px rgba(200, 200, 255, 0.9));
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 18px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: 50px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 40px rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.move #sun {
+  transform: translateY(800px) translateX(-50%) rotate(360deg);
+  filter: drop-shadow(0 0 60px rgba(255, 140, 50, 1));
+}
+
+.move #moon {
+  transform: translateY(-800px) translateX(-50%) rotate(360deg);
+  filter: drop-shadow(0 0 60px rgba(170, 170, 255, 1));
+}
