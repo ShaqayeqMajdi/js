@@ -1,0 +1,196 @@
+/* Body styles */
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  height: 100vh;
+  background: linear-gradient(100deg, #575656, #062e3f);
+}
+
+/* Theme switcher container */
+.theme-switcher {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/* Theme switcher button styles */
+.theme-switcher__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #d1dae3;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* light theme button */
+.theme-switcher__button--light {
+  background: linear-gradient(100deg, #d4f1ff, #ffffff);
+}
+
+/* dark theme button */
+.theme-switcher__button--dark {
+  background: linear-gradient(100deg, #575656, #062e3f);
+}
+
+/* Container for main content */
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+/* Title styling */
+.title {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid rgba(0, 0, 0, 0.75);
+  color: rgb(255, 223, 219);
+  font-size: 6rem;
+  font-weight: 550;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.563);
+  animation: animated-text 2s steps(11, end) 0.5s 1 normal both,
+    animated-cursor 750ms steps(11, end) infinite;
+}
+
+/* Keyframes for text animation */
+@keyframes animated-text {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 480px;
+  }
+}
+
+/* Keyframes for cursor animation */
+@keyframes animated-cursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+/* Todo form container */
+.todo-form {
+  display: flex;
+  justify-content: center;
+}
+
+/* Input field for adding new tasks */
+.todo-form__input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 100%;
+  background-color: #1f1f1f;
+  max-width: 600px;
+}
+
+/* Button to submit the form */
+.todo-form__button {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+  background-color: #fce4ec;
+  color: #1b1c1e;
+  font-weight: bold;
+}
+
+/* Date and time display */
+.datetime {
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  color: rgb(255, 223, 219);
+}
+
+/* Todo list container */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Todo item block */
+.todo {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px;
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Todo item text */
+.todo__item {
+  flex: 1;
+  text-align: left;
+  padding: 0 1rem;
+}
+
+.todo__date {
+  font-size: 12px;
+  color: gray;
+}
+
+/* Button styles for checking and deleting tasks */
+.todo__check-btn,
+.todo__delete-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Light Theme for body */
+body.light-theme {
+  background: linear-gradient(100deg, #d4f1ff, #ffffff);
+  color: black;
+}
+
+body.light-theme .todo {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+body.light-theme .todo__item {
+  color: #1b1c1e;
+}
+
+body.light-theme .todo-form__input {
+  background-color: #fff;
+  color: #1b1c1e;
+}
+
+body.light-theme .todo-form__button {
+  background-color: #ffcccb;
+  color: #1b1c1e;
+}
+
+body.light-theme .datetime {
+  color: rgb(30, 30, 30);
+}
+
+body.light-theme .title {
+  color: rgb(30, 30, 30);
+}
+
+body.light-theme i {
+  color: #ec9e9d;
+}
