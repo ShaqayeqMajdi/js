@@ -162,7 +162,6 @@ body {
 /* Light Theme for body */
 body.light-theme {
   background: linear-gradient(100deg, #d4f1ff, #ffffff);
-  color: black;
 }
 
 body.light-theme .todo {
