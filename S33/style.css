@@ -32,7 +32,6 @@ body {
   align-items: center;
   cursor: pointer;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.582);
-  transition: transform 0.3s ease;
   font-size: 2.75rem;
   font-weight: bold;
   color: #5b2333;
