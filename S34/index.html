@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamaha Pianos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Play the Legend – Yamaha Pianos</h1>
+
+      <label for="priceSelect">Filter by Price:</label>
+      <select id="priceSelect" onchange="filterProducts()">
+        <option value="">All</option>
+        <option value="5000">Under 5,000</option>
+        <option value="15000">Under 15,000</option>
+        <option value="20000">Under 20,000</option>
+        <option value="50000">Under 50,000</option>
+      </select>
+
+      <div id="products"></div>
+    </div>
+  </body>
+</html>
