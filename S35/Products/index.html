@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yamaha Pianos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Play the the legend - Yamaha Pianos</h1>
+
+      <label for="sortSelect">Sort by price:</label>
+      <select id="sortSelect" onchange="sortProducts()">
+        <option value="">All</option>
+        <option value="lowest">Lowest to Highest</option>
+        <option value="highest">Highest to Lowest</option>
+      </select>
+
+      <div id="products"></div>
+    </div>
+  </body>
+</html>
