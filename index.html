@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+        background-color: #808b96;
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        background-color: #212f3d;
+        border-radius: 18px;
+        padding: 40px 50px;
+        text-align: center;
+        width: 320px;
+      }
+
+      input[type="number"] {
+        padding: 12px 18px;
+        border: none;
+        border-radius: 12px;
+        width: 220px;
+        background: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        font-size: 1.1rem;
+        outline: none;
+        margin-bottom: 25px;
+      }
+
+      button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 12px;
+        background: #17202a;
+        color: #fff;
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Enter a number</h2>
+      <input type="number" id="numberInput" />
+      <br />
+      <button onclick="checkNumber()">Check</button>
+    </div>
+  </body>
+</html>
